@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试仓库演示页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        h1 {
+            color: #0366d6;
+        }
+        h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>测试仓库演示页面</h1>
+            <p>通过GitHub API创建的示例项目</p>
+        </header>
+
+        <section>
+            <h2>项目简介</h2>
+            <p>这是一个使用Claude助手通过GitHub API创建的测试仓库演示。该项目展示了如何使用编程方式与GitHub进行交互，包括创建仓库、添加文件、创建分支等操作。</p>
+        </section>
+
+        <section>
+            <h2>功能演示</h2>
+            <ul>
+                <li>创建新仓库</li>
+                <li>添加和更新文件</li>
+                <li>创建新分支</li>
+                <li>合并拉取请求</li>
+                <li>搜索代码和仓库</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>示例代码</h2>
+            <p>以下是一个简单的Python代码示例：</p>
+            <pre><code>
+# 简单的机器学习示例
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+
+# 加载数据
+iris = load_iris()
+X, y = iris.data, iris.target
+
+# 划分训练集和测试集
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# 训练模型
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train, y_train)
+
+# 评估模型
+accuracy = model.score(X_test, y_test)
+print(f"模型准确率: {accuracy:.2f}")
+            </code></pre>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 测试仓库 | 使用GitHub API创建</p>
+        </footer>
+    </div>
+</body>
+</html>
